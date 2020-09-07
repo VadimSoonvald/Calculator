@@ -39,8 +39,12 @@ public class Calculator {
         if ("/".equals(symbols)) {    
             result = number_one / number_two;
         }    
-        System.out.print("Result: ");
-        System.out.println(result);
+        System.out.print("Result");
+        System.out.printf("%.2f%n%s%n%10.2f%n ,и %n%10.2f%n",
+                result, "использовались числа:",
+                number_one,
+                number_two
+        );
         System.out.println("Good bye");
     }
     
